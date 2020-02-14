@@ -4,7 +4,7 @@ const iconv = require('iconv-lite');
 const log = console.log;
 const notic_student = 'http://www.kongju.ac.kr/lounge/board.jsp?board=student_news&page='
 
-function GetData(i) {
+function GetNoticeStudent(i) {
   request({
     method:'GET',
     uri: notic_student + i,
@@ -28,10 +28,5 @@ function GetData(i) {
       }
       data.push(cols);
     }
-    log(data);
   });
-}
-
-for (let i = 0; i < 3; i++) {
-  GetData(i);
 }
