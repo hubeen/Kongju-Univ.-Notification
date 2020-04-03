@@ -15,5 +15,7 @@
     "iconv-lite": "^0.5.1",
     "request": "^2.88.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
 }

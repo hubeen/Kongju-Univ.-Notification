@@ -82,28 +82,32 @@
 
                 </div>
             </nav>
-            <div class="card text-center"style="width: 18rem;float:none; margin:0 auto">
-                <img class="card-img-top" src="../../img/profile.jpeg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">개발자 소개</h5>
-                  <p class="card-text">프리랜서로 일을 하고 있으며 취미로 대학을 다니고 있는 개발자</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">문승현</li>
-                  <li class="list-group-item">1998.11.20</li>
-                </ul>
-                <div class="card-body">
-                  <a href="http://hubeen.kr" class="card-link">홈페이지 바로가기</a>
-                  <a href="http://github.com/hubeen" class="card-link">깃허브 바로가기</a>
-                </div>
-              </div>
+            <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">제목</th>
+                    <th scope="col">날짜</th>
+                    <th scope="col">글쓴이</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>제목 더미 데이터</td>
+                    <td>2020.03.30</td>
+                    <td>공주대학교</td>
+                  </tr>
+                  
+                </tbody>
+                
+              </table>
         </div>
     </div>
 
+    <script src="../contents/main.js"></script>
     <script src="../../js/jquery-3.3.1.slim.min.js"></script>
     <script src="../../js/popper.min.js"></script>
     <script src="../../js/bootstrap.min.js"></script>
-
+    
     <script type="text/javascript">
         $(document).ready(function () {
             $('#sidebarCollapse').on('click', function () {
