@@ -8,13 +8,13 @@
 
     <title>KNU Notification</title>
 
-    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
 
     <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="/css/main.css">
 
-    <script defer src="../../js/fontawesome.js"></script>
-    <script defer src="../../js/solid.js"></script>
+    <script defer src="/js/fontawesome.js"></script>
+    <script defer src="/js/solid.js"></script>
 
 </head>
 
@@ -22,32 +22,36 @@
 
     <div class="wrapper">
         <!-- Sidebar Holder -->
-        <nav id="sidebar" class="active">
+        <nav id="sidebar">
             <div class="sidebar-header">
                 <h3>KNU Notification</h3>
             </div>
 
             <ul class="list-unstyled components">
-                <p><a href="http://hubeen.kr/adsens_notify.html">서버 비용 혼자서 내면서 재능 기부하는 불쌍한 개발자에게 광고 보러 가주기</a></p>
-                    <li class="active">
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">공주대학교</a>
-                    <ul class="list-unstyled collapse show" id="homeSubmenu">
+                <p><a href="http://hubeen.kr/adsens_notify.html" target="_blank">서버 비용 혼자서 내면서 재능 기부하는 불쌍한 개발자에게 광고 보러 가주기</a></p>
+                    <li>
+                        <a href="main.html">메인</a>
+                    </li>
+                    <li>
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="flase" class="dropdown-toggle">공주대학교</a>
+                    <ul class="list-unstyled collapse" id="homeSubmenu">
                         <li>
-                            <a href="kongju_notics.html#hot">HOT뉴스</a>
+                            <a id="hot" href="kongju_notics.html?id=hot">HOT뉴스</a>
                         </li>
                         <li>
-                            <a href="kongju_notics.html#student">학생소식</a>
+                            <a id="student" href="kongju_notics.html?id=student">학생소식</a>
                         </li>
                         <li>
-                            <a href="kongju_notics.html#executive">행정소식</a>
+                            <a id="executive" href="kongju_notics.html?id=executive">행정소식</a>
                         </li>
                         <li>
-                            <a href="kongju_notics.html#work">행사안내</a>
+                            <a id="work" href="kongju_notics.html?id=work">행사안내</a>
                         </li>
                         <li>
-                            <a href="kongju_notics.html#career">취업소식</a>
+                            <a id="career" href="kongju_notics.html?id=career">취업소식</a>
                         </li>
                     </ul>
+                    </li>
                 </li>
                 <li>
                     <a href="#">천안캠퍼스</a>
@@ -56,11 +60,35 @@
                         <li>
                             <a href="#">컴퓨터공학부</a>
                         </li>
+                        <li>
+                            <a href="#">룰루랄라</a>
+                        </li>
+                        <li>
+                            <a href="#">룰루랄라</a>
+                        </li>
+                        <li>
+                            <a href="#">룰루랄라</a>
+                        </li>
+                        <li>
+                            <a href="#">룰루랄라</a>
+                        </li>
+                        <li>
+                            <a href="#">룰루랄라</a>
+                        </li>
+                        <li>
+                            <a href="#">룰루랄라</a>
+                        </li>
+                        <li>
+                            <a href="#">룰루랄라</a>
+                        </li>
+                        <li>
+                            <a href="#">룰루랄라</a>
+                        </li>
                     </ul>
                     <a href="#">예산캠퍼스</a>
                 </li>
                 <li>
-                    <a href="mailto:mhubeen@gmail.com?subject=[KNU Notification] 문의 사항&body=문의 내용이나 버그 내용을 작성해주세요.">문의하기</a>
+                    <a href="mailto:mhubeen@gmail.com?subject=[KNU Notification] 문의 사항&body=문의 내용이나 버그 내용을 작성해주세요." target="_blank">문의하기</a>
                 </li>
             </ul>
         </nav>
@@ -71,19 +99,18 @@
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
 
-                    <button type="button" id="sidebarCollapse" class="navbar-btn- active">
+                    <button type="button" id="sidebarCollapse" class="navbar-btn- ">
                         <span></span>
                         <span></span>
                         <span></span>
                     </button>
-                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-align-justify"></i>
-                    </button>
-
+                    <div class="navbar-nav mx-auto">
+                        <h2 id="category">메인</h2>
+                    </div>
                 </div>
             </nav>
             <div class="card text-center"style="width: 18rem;float:none; margin:0 auto">
-                <img class="card-img-top" src="../../img/profile.jpeg" alt="Card image cap">
+                <img class="card-img-top" src="../../images/profile.jpeg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">개발자 소개</h5>
                   <p class="card-text">프리랜서로 일을 하고 있으며 취미로 대학을 다니고 있는 개발자</p>
@@ -93,25 +120,18 @@
                   <li class="list-group-item">1998.11.20</li>
                 </ul>
                 <div class="card-body">
-                  <a href="http://hubeen.kr" class="card-link">홈페이지 바로가기</a>
-                  <a href="http://github.com/hubeen" class="card-link">깃허브 바로가기</a>
+                  <a href="http://hubeen.kr" target="_blank" class="card-link">홈페이지 바로가기</a>
+                  <a href="http://github.com/hubeen" target="_blank" class="card-link">깃허브 바로가기</a>
                 </div>
               </div>
         </div>
     </div>
 
-    <script src="../../js/jquery-3.3.1.slim.min.js"></script>
-    <script src="../../js/popper.min.js"></script>
-    <script src="../../js/bootstrap.min.js"></script>
+    <script src="/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/main.js"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').toggleClass('active');
-                $(this).toggleClass('active');
-            });
-        });
-    </script>
 </body>
 
 </html>

@@ -1,3 +1,6 @@
+/*
+    DEMO STYLE
+*/
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
 
@@ -84,7 +87,7 @@ a, a:hover, a:focus {
 }
 
 #sidebar ul li a {
-    padding: 10px;
+    padding: 15px;
     font-size: 1.1em;
     display: block;
 }
@@ -146,6 +149,7 @@ a.article, a.article:hover {
 ----------------------------------------------------- */
 #content {
     width: 100%;
+    height: 100%;
     padding: 20px;
     min-height: 100vh;
     transition: all 0.3s;
@@ -183,6 +187,19 @@ a.article, a.article:hover {
     transform: none;
     opacity: 1;
     margin: 5px auto;
+}
+/* ---------------------------------------------------
+    Table
+----------------------------------------------------- */
+
+.table {
+    width: 450px;
+}
+.table th {
+    font-size: 14px;
+}
+.table td {
+    font-size: 10px;
 }
 
 
